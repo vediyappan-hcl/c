@@ -25,7 +25,6 @@ int main()
     s1.i = 10;
     s1.ch = 'a';
     s1.f = 3.141;
-    printf("s1.i = %d\ns1.ch = %c\ns1.f = %f\n", s1.i, s1.ch, s1.f);
     for(indx=0; indx<5; indx++)
 	s1.arr[indx] = indx+10;
     strcpy(s1.str, "vediyappan");
@@ -33,6 +32,7 @@ int main()
 	s1.farr[indx] = indx+100;
 
     // printing structure members
+    printf("s1.i = %d\ns1.ch = %c\ns1.f = %f\n", s1.i, s1.ch, s1.f);
     for(indx=0; indx<5; indx++)
 	printf("s1.arr[%d] = %d ", indx, s1.arr[indx]);
     printf("\n");
