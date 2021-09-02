@@ -25,7 +25,7 @@ int main()
     s1.i = 10;
     s1.ch = 'a';
     s1.f = 3.141;
-    printf(" s1.i = %d\ns1.ch = %c\ns1.f = %f\n");
+    printf("s1.i = %d\ns1.ch = %c\ns1.f = %f\n", s1.i, s1.ch, s1.f);
     for(indx=0; indx<5; indx++)
 	s1.arr[indx] = indx+10;
     strcpy(s1.str, "vediyappan");
