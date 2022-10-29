@@ -2,7 +2,7 @@
 @desc C program to understand the use of #ifdef and #ifndef directives.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macros
