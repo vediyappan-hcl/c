@@ -2,7 +2,7 @@
 @desc C program to understand token pasting operator.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Token pasting operator ## used to concatenate two tokens into a single token
