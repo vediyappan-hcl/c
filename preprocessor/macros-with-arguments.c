@@ -2,7 +2,7 @@
 @desc C program to understand macros with arguments.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macros with arguments
