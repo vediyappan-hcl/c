@@ -2,7 +2,7 @@
 @desc C program to understand the use of #else directive.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macro
