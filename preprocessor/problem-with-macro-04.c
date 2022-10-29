@@ -1,33 +1,32 @@
 /*******************************************************************************
 @desc C program to understand a problem with macro.
-@info Using same variable name in a function calling macro and in macro may cause
-      conflict between them.
+@info Whenever if condition is used in macro, enclose the expansion with curly
+      braces or use conditional operator 
 *******************************************************************************/
 
 // Sytem Headers
 #include <stdio.h>  // printf
 
 // Macro with arguments
-#define SWAP(dType,x,y) {dType temp; temp=x, x=y, y=temp;} 
-// #define SWAP(dType,x,y) {dType TEMP; TEMP=x, x=y, y=TEMP;} 
+#define MACRO(x) if(x==0) printf("Duck out!\n");
+// #define MACRO(x) { if(x==0) printf("Duck out!\n"); }
+// #define MACRO(x) x==0 ? printf("Duck out!\n") : printf("%d\n", x);
 
 /*******************************************************************************
 @desc Main
 *******************************************************************************/
 int main(void)
 {
-    int iNum1 = 7;
-    int temp = 9;
+    int iRuns = 54;
 
-    printf("Before swapping: Number1 = %d, Number2 = %d\n", iNum1, temp);
-
-    SWAP(int, iNum1, temp);
-    // Expanded as {int temp; temp=iNum1, iNum1=temp, temp=temp;}
-
-    // Result will be 7 and 9 which is unexpected
-    // To avoid such issues, use naming convention for local vairables declared in macros
-    // Expanded as {int TEMP; TEMP=iNum1, iNum1=temp, temp=TEMP;} --- results 9 and 7
-    printf("After swapping:  Number1 = %d, Number2 = %d\n", iNum1, temp);
+    if(iRuns < 100)
+        MACRO(iRuns)
+        // Expanded as
+        // if(iRuns==0)
+        //     printf("Duck out!\n");
+    else
+        // Printing this one is unexpected
+        printf("Scored a century!\n");
 
     return 0;
 }
