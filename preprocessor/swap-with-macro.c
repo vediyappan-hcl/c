@@ -2,7 +2,7 @@
 @desc C program to swap two numbers of any data type using macro.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macro
