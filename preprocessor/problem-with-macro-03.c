@@ -3,7 +3,7 @@
 @info Macro cannot be used in some scenarios.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macro with arguments, enclosed whole macro expansion inside pareantheses
