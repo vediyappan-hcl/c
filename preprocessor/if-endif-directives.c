@@ -2,7 +2,7 @@
 @desc C program to understand the use of #if and #endif directives.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macro
