@@ -4,7 +4,7 @@
       conflict between them.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macro with arguments
