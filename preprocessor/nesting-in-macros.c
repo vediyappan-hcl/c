@@ -2,7 +2,7 @@
 @desc C program to understand nesting in macros.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macros with arguments
