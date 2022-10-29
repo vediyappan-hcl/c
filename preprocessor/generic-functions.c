@@ -2,7 +2,7 @@
 @desc C program to understand generic functions.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Generic function
