@@ -4,7 +4,7 @@
       the entire macro expansion and also around each argument.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macro with arguments
