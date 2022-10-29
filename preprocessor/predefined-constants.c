@@ -2,7 +2,7 @@
 @desc C program to print the values of predefined constants.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 /*******************************************************************************
