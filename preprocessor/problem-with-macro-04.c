@@ -4,7 +4,7 @@
       braces or use conditional operator 
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Macro with arguments
