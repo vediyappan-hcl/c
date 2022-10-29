@@ -2,7 +2,7 @@
 @desc C program to understand stringizing operator.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // # is stringizing operator, causes the argument it precedes to be turned into a string
