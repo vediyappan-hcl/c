@@ -2,7 +2,7 @@
 @desc C program to understand macro expansion.
 *******************************************************************************/
 
-// Sytem Headers
+// System headers
 #include <stdio.h>  // printf
 
 // Capital letters are used to name the macros, distinguish it from other variables
