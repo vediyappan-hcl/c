@@ -6,7 +6,7 @@
 
 // Main
 int main(void)
-{
+{ 
     int *arr[3];
     int  cols;
     int  i, j;
