@@ -1,29 +1,29 @@
-// C program to understand the function returning pointer
+// C program to understand function returning pointer
 
 // System header
 #include <stdio.h>  // printf
 
 // func
-int *func()
+int *func(int *ptr, int i)
 {
-    int  num = 5;
-    int *ptr = &num;
+    ptr = ptr + i;
 
-    printf("*ptr = %d\n", *ptr);
-
-    // Returning pointer that points to the a local variable
-    // leads to undefined behavior
+    // Return the pointer
     return ptr;
 }
 
 // Main
 int main(void)
 {
+    int arr[5] = {11, 12, 13, 14, 15};
     int *ptr;
+    int i = 3;
 
-    ptr = func();
+    // Capture the pointer returned by function
+    ptr = func(arr, i);
 
-    printf("*ptr = %d\n", *ptr);
+    printf("Base address = %p, Pointer points to %p, Pointer contains value %d\n",
+            arr, ptr, *ptr);    
 
     return 0;
 }
