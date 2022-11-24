@@ -1,21 +1,12 @@
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
- *
- * Filename:    addressOperator.c
- * Description: C program to illustrate address operator
- * Author:      Vediyappan V.
- * Date:        27-Nov-2021
- *
- * Brief: 
- *  - Address operator is used to store the address of the variable.
- *  - This is denoted by an ampersand (&).
- *
- * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+// C program to understand the address operator
 
-#include <stdio.h>
+// System header
+#include <stdio.h>  // printf
 
+// Main
 int main()
 {
-    // declaring and initializing variables
+    // Declaring and initializing variables
     int i = 10;
     char ch = 'a';
     float f = 3.141;
@@ -23,7 +14,9 @@ int main()
     int arr[] = {10, 20};
     char str[] = "hello";
 
-    // printing addresses
+    // Address operator '&' returns the address of a variable
+    // Format specifier '%p' used to print addresses
+    // Printing addresses
     printf("%p\n", &i);     // 45a0 4-bytes 45a0 45a1 45a2 45a3
     printf("%p\n", &ch);    // 459f 1-byte  459f
     printf("%p\n", &f);     // 45a4 4-bytes 45a4 45a5 45a6 45a7
