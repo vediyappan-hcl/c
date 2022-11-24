@@ -1,4 +1,4 @@
-// C program to return more than one value from a function using call by reference.
+// C program to return more than one value from a function using call by reference
 
 // System header
 #include <stdio.h>  //printf
