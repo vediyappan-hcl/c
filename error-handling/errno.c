@@ -5,6 +5,7 @@
 // System headers
 #include <stdio.h>  // printf, fopen
 #include <errno.h>  // errno
+#include <string.h> // strerror
 
 /*******************************************************************************
 @desc Main
@@ -20,6 +21,7 @@ int main(void)
         // function call and defined in the header file errno.h. For example,
         // #define	ENOENT 2	/* No such file or directory */
         printf("Value of errno = %d\n", errno);
+        printf("Error = %s\n", strerror(errno));
         return -1;
     }
 
